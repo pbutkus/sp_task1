@@ -12,13 +12,14 @@ public class Main {
 
         int userInput = scanner.nextInt();
         boolean isPalindrome = isPalindrome(userInput);
+
         System.out.println(isPalindrome);
     }
 
     public static boolean isPalindrome(int userInput) {
         String userInputString = String.valueOf(userInput);
 
-        String firstHalf  = userInputString.substring(0, userInputString.length() / 2);
+        String firstHalf = userInputString.substring(0, userInputString.length() / 2);
         String secondHalf = userInputString.substring(userInputString.length() / 2);
 
         if (firstHalf.length() + 1 == secondHalf.length()) {
